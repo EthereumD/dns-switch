@@ -7,3 +7,9 @@
 * 運行：右鍵`以系統管理員身分執行` 輸入想要切換的 DNS
 
 <img src="https://raw.githubusercontent.com/PW-Chen/dns-switch/master/image/demo.PNG" width="60%" height="60%">     
+
+
+#### 參數引用
+* [Mogu DNS](https://www.mogudns.net/)
+* [Pure DNS](http://puredns.cn/)
+* [XsicoDNS](http://dns.xsico.cn/)
