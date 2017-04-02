@@ -1,7 +1,7 @@
 @echo off  
 
 rem //設置變數   
-set NAME="本地連接"  
+set NAME="Wi-Fi"  
 set offical=114.114.114.114
 set mogu1=115.159.96.69
 set mogu2=122.114.245.45
