@@ -91,7 +91,4 @@ echo 正在設置本地DNS代理，請稍等...
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%xsico2% register=PRIMAR
 echo 本地代理已設置！  
-pause  
-
-
-  
+pause
