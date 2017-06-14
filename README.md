@@ -28,3 +28,7 @@ pure2 = 115.159.220.214
 * [XsicoDNS](http://dns.xsico.cn/)    
 xsico1 = 115.159.157.26    
 xsico2 = 115.159.158.38
+
+* [aixyz](https://aixyz.com/)    
+aixyz1 = 115.159.146.99
+aixyz2 = 123.206.21.48
