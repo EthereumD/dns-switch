@@ -9,8 +9,12 @@ set pure1=123.207.137.88
 set pure2=115.159.220.214
 set xsico1=115.159.157.26
 set xsico2=115.159.158.38
+<<<<<<< HEAD
 set aixyz1=115.159.146.99
 set aixyz2=123.206.21.48
+=======
+set mogutest=103.86.44.1
+>>>>>>> origin/master
 echo 當前可用操作有：  
 echo   1 恢復為 動態 DNS
 echo   2 設置 DNS 為 114.114.114.114
@@ -24,8 +28,12 @@ echo   .
 echo   7 設置為 XsicoDNS (1)
 echo   8 設置為 XsicoDNS (2)
 echo   .
+<<<<<<< HEAD
 echo   9 設置為 AIXYZ DNS (1)
 echo   10設置為 AIXYZ DNS (2)
+=======
+echo   9 設置為 mogutest
+>>>>>>> origin/master
 echo 請選擇後回車：
 set /p operate=  
 if %operate%==1 goto 1 
@@ -80,20 +88,29 @@ echo 正在設置本地DNS代理，請稍等...
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%pure2% register=PRIMAR
 echo 本地代理已設置！  
+<<<<<<< HEAD
 exit
+=======
+pause  
+>>>>>>> origin/master
 
 :7
 echo 正在設置本地DNS代理，請稍等...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%xsico1% register=PRIMAR
 echo 本地代理已設置！  
+<<<<<<< HEAD
 exit
+=======
+pause  
+>>>>>>> origin/master
 
 :8
 echo 正在設置本地DNS代理，請稍等...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%xsico2% register=PRIMAR
 echo 本地代理已設置！  
+<<<<<<< HEAD
 exit
 
 9:
@@ -109,3 +126,13 @@ ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%aixyz2% register=PRIMAR
 echo 本地代理已設置！  
 exit
+=======
+pause
+
+:
+echo 正在設置本地DNS代理，請稍等...  
+ipconfig /flushdns
+netsh interface ipv4 set dns name=%NAME% source=static addr=%mogutest% register=PRIMAR
+echo 本地代理已設置！  
+pause
+>>>>>>> origin/master
