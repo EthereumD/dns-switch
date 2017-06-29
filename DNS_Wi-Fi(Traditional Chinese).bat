@@ -2,6 +2,7 @@
 
 rem //設置變數   
 set NAME="Wi-Fi"  
+set local=127.0.0.1
 set offical=114.114.114.114
 set mogu1=115.159.96.69
 set mogu2=122.114.245.45
@@ -13,7 +14,7 @@ set aixyz1=115.159.146.99
 set aixyz2=123.206.21.48
 
 echo 當前可用操作有：  
-echo   1 恢復為 動態 DNS
+echo   1 設置微 localhost
 echo   2 設置 DNS 為 114.114.114.114
 echo   .
 echo   3 設置為 蘑菇 DNS (1) 失效
@@ -41,13 +42,12 @@ if %operate%==8 goto 8
 if %operate%==9 goto 9  
 if %operate%==10 goto 10  
 
-:1 
-echo 正在設置動態DNS，請稍等...  
+:1
+echo 正在設置本地DNS代理，請稍等...  
 ipconfig /flushdns
-netsh interface ip set dns name=%NAME% dhcp
-echo 恢復動態DNS設置！  
+netsh interface ipv4 set dns name=%NAME% source=static addr=%local% register=PRIMAR
+echo 本地代理已設置！  
 exit
-
 
 :2
 echo 正在設置本地DNS代理，請稍等...  
