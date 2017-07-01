@@ -1,6 +1,6 @@
 @echo off  
 
-rem //設置變數   
+rem //Set the variable     
 set NAME="Wi-Fi"  
 set local=127.0.0.1
 set offical=114.114.114.114
@@ -13,23 +13,23 @@ set xsico2=115.159.158.38
 set aixyz1=115.159.146.99
 set aixyz2=123.206.21.48
 
-echo 當前可用操作有：  
-echo   1 設置為 localhost
-echo   2 設置 DNS 為 114.114.114.114
+echo Currently available operation：  
+echo   1  Set as localhost
+echo   2  Set as 114.114.114.114
 echo   .
-echo   3 設置為 蘑菇 DNS (1) 失效
-echo   4 設置為 蘑菇 DNS (2) 失效
+echo   3  Set as Mogu DNS (1) Failure
+echo   4  Set as Mogu DNS (2) Failure
 echo   .
-echo   5 設置為 Pure DNS (1)
-echo   6 設置為 Pure DNS (2)
+echo   5  Set as Pure DNS (1)
+echo   6  Set as Pure DNS (2)
 echo   .
-echo   7 設置為 XsicoDNS (1)
-echo   8 設置為 XsicoDNS (2)
+echo   7  Set as XsicoDNS (1)
+echo   8  Set as XsicoDNS (2)
 echo   .
-echo   9 設置為 AIXYZ DNS (1)
-echo   10設置為 AIXYZ DNS (2)
+echo   9  Set as AIXYZ DNS (1)
+echo   10 Set as AIXYZ DNS (2)
 
-echo 請選擇後回車：
+echo After you select Enter：
 set /p operate=  
 if %operate%==1 goto 1 
 if %operate%==2 goto 2  
@@ -43,74 +43,74 @@ if %operate%==9 goto 9
 if %operate%==10 goto 10  
 
 :1
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%local% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 :2
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%offical% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 :3
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%mogu1% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 :4
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%mogu2% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 :5
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%pure1% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 :6
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%pure2% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit  
 
 
 :7
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%xsico1% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 
 :8
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%xsico2% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 9:
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%aixyz1% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
 10:
-echo 正在設置本地DNS代理，請稍等...  
+echo Setting up local DNS , please wait...  
 ipconfig /flushdns
 netsh interface ipv4 set dns name=%NAME% source=static addr=%aixyz2% register=PRIMAR
-echo 本地代理已設置！  
+echo Local DNS is set up!  
 exit
 
