@@ -3,7 +3,7 @@
 # dns-switch      
 
 ## 介紹
-現今的穿越防火長的方法眾多，包刮vpn, socks5 代理, hosts, 科學DNS。本項目致力於將眾多的科學DNS做出簡單的整理，使用戶可以更簡單的方式切換科學DNS。    
+現今的穿越防火長的方法眾多，包括vpn, socks5 代理, hosts, 科學DNS。本項目致力於將眾多的科學DNS做出簡單的整理，使用戶可以更簡單的方式切換科學DNS。    
 * DNS_Wi-Fi(Traditional Chinese).bat 為中文版
 * DNS_Wi-Fi.bat  For the English version
 
